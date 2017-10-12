@@ -1,0 +1,345 @@
+
+@import 'https://fonts.googleapis.com/css?family=Work+Sans:300,400,700';
+	
+	body{
+		font-size: 16px;
+		font-family: 'Work Sans', sans-serif;
+		top: 0;
+	}	
+
+	.ham-container{
+		position: fixed;
+		z-index: 90;
+	}
+	.hamberguer{
+		top: 20px;
+		left: 30px;
+		position: absolute;
+		
+	}
+
+	#mySideNav{
+	width: 0;
+	height: 100vh;
+	z-index: 100;
+	background-color: black;
+	opacity: 0.8;
+	display: block;
+	position: fixed;
+	text-align: center;
+	transition: width 1s; 
+	overflow-x: hidden;
+
+	}
+
+    #closeIcon{
+    position: absolute;
+    top: -30px;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+	}
+
+	.sideNav a{
+	text-decoration: none;
+	font-size: 1.3em;
+	color: white;
+	display: block;
+	padding: 5px;
+	font-family: Work Sans;
+	margin-top: 30px;
+
+	}
+
+	.sideNav a:hover{
+	color: gold;
+	}
+
+/* home page */
+
+	#home{
+		width: 100%;
+		height: 30vw;
+		position: relative;
+		text-align: center;
+
+
+	}
+
+	.header img{
+		position: absolute;
+		width: 100vw;
+		height: 30vw;
+		left: 0;
+		object-fit: cover;
+		object-position:0 30%;
+		z-index: 1;
+
+	}
+
+	.fixed{
+		position: fixed;
+	}
+
+	.big-text{
+		font-size: 4vw;
+		top: 13vw;
+		font-family: 'Work Sans';
+		position: absolute;
+		color: dimgray;
+		z-index: 2;
+		left: 0;
+		background-color: white;
+		/*opacity: 0.5;*/
+		padding-left: 10vw;
+		padding-right: 1vw;
+
+
+
+
+	}
+
+	.titles{
+		font-size: 2em;
+		top: 20px;
+		font-family: 'Work Sans';
+		position: relative;
+		color: black;
+		width: 80vw;
+		margin-left: 10vw;
+		text-align: left;
+		background-color: gold;
+	}
+	.content{
+		font-size: 1.3em;
+		top: 20px;
+		font-family: 'Work Sans';
+		position: relative;
+		color: dimgray;
+		width: 80vw;
+		margin-left: 10vw;
+		text-align: left;
+
+	}
+
+
+/* team page */
+	.grid-one{
+		width: 100%;
+		height: auto;
+		margin-left: 0vw;
+		z-index: 1;
+		background-color: white;
+		position: relative;
+		text-align: center;
+	}
+
+	.grid-one img{
+		width: 90vw;
+		height: auto;
+	}
+	.grid-one-container{
+		margin-bottom: 100px;
+	}
+/* #inspiration page */
+	.#inspiration{
+		width: 100%;
+		height: calc(23vw*3);
+		margin-left: 0vw;
+		z-index: 1;
+		background-color: white;
+		position: relative;
+		text-align: center;
+	}
+	.grid-container{
+		width: 81vw;
+		height: auto;
+		margin-left: 9.5vw;
+		margin-top: 60px;
+		
+	}
+
+	.img-grid{
+		background-color: gold;
+		width: calc(78vw/3);
+		height: 18.8vw;
+		margin: 0.5vw;
+		float: left;
+	}
+	.grid-container img{
+		width: calc(78vw/3);
+		height: auto;
+		z-index: 1;
+	}
+	.name-grid {
+		width: calc(78vw/3);
+		height: 18.8vw;
+		z-index: 10;
+		position: absolute;
+		text-align: left;
+		opacity: 0;
+	}
+
+	.name-grid:hover{
+		opacity: 1;
+		cursor: pointer;
+	}	
+
+	.name-grid span{
+		position: absolute;
+		font-size: 24px;
+		margin-left: 1vw;
+		color: white;
+		z-index: 20;
+		margin-top: 2vw;
+	}
+
+	.back-grid{
+		width: calc(78vw/3);
+		height: 18.8vw;
+		background-color: black;
+		opacity: 0.5;
+		z-index: 11;
+	}
+
+/* aesthetic page */
+	.aesthetic{
+		width: 100%;
+		height: 110vw;
+		margin-left: 0vw;
+		z-index: 1;
+		background-color: white;
+		position: relative;
+		text-align: center;
+	}
+
+	.aesthetic img{
+		width: 80vw;
+		height: auto;
+		margin-left: 1vw;
+		padding-top: 50px;
+	}
+
+/* refined page */
+	.refined{
+		width: 100%;
+		height: 110vw;
+		margin-left: 0vw;
+		z-index: 1;
+		background-color: white;
+		position: relative;
+		text-align: center;
+	}
+
+	.refined img{
+		width: 80vw;
+		height: auto;
+		margin-left: 1vw;
+		padding-top: 50px;
+	}
+
+
+/* contact page */
+	.contact{
+		width: 100%;
+		height: 700px;
+		margin-left: 0vw;
+		z-index: 1;
+		background-color: salmon;
+		position: relative;
+		text-align: center;
+	}
+
+
+
+/* menu page */
+	.menubar{
+		background-color: #f8f7fb;
+		width: 100vw;
+		height: 50px;
+		margin-left: 0;
+		margin-top: -50px;
+		opacity: 0.7;
+		z-index: 10;
+		
+	}
+
+	.fixed{
+		position: fixed;
+		top: 50px;
+		width: 100%;
+		opacity: 0.9;
+
+	}
+	.menubar nav{
+		align-content: center;
+		text-decoration: none;
+		text-align: center;
+		list-style-type: none;
+		padding-top: 11px;
+		width: 70vw;
+		height: 50px;
+		margin-left: 15vw;
+		margin-top: -50px;
+		z-index: 20; 
+
+	}
+
+	.menubar nav li{
+		position: relative;
+		display: inline-block;
+		padding-left: 1vw;
+		padding-right: 1vw;
+
+	}
+
+
+	.submenu{
+		text-decoration: none;
+		color: #604B9F;
+		background-color: none;
+		font-size: 20px;
+		font-family: 'Work Sans', sans-serif;
+		padding: 13px;
+
+	}
+
+	.submenu:hover{
+		background-color: #604B9F;
+		color: white;
+		text-decoration: none;
+	}
+
+	footer{
+		opacity: 0.9;
+		width: 100vw;
+		height: 15vh;
+		bottom: 0;
+		position: relative;
+		z-index: 30;
+		transition: 0.5s;
+		background-color: #604B9F;
+		
+	}
+
+
+	.purple{
+		background-color: #604B9F;
+		color: white;
+		text-decoration: none;
+	}
+
+
+	.t1, .t2, .t3, .t4, .t5 {
+		opacity: 0;
+		transition: opacity 0.5s;
+	}
+	.appear{
+		opacity: 1;
+	}
+
+	.display{
+		display: all;
+		opacity: 1;
+		transition: 0.5s;
+	}
