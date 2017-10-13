@@ -18,6 +18,13 @@
 		position: absolute;
 		
 	}
+	#back-img{
+		width: 100vw;
+		max-height: 100vh;
+		object-fit: cover;
+		object-position:0 0%;
+	}
+
 
 	#myTopNav{
 	height: 60px;
@@ -36,7 +43,8 @@
 		text-align: left;
 		position: absolute;
 		margin-left: 37.5vw;
-		z-index: 200;		
+		z-index: 200;
+
 		
 	}
 
@@ -117,16 +125,6 @@
 
 	}
 
-	.header img{
-		position: absolute;
-		width: 100vw;
-		height: 30vw;
-		left: 0;
-		object-fit: cover;
-		object-position:0 30%;
-		z-index: 1;
-
-	}
 
 	.fixed{
 		position: fixed;
