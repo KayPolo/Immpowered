@@ -90,6 +90,7 @@
 
 	#start:hover{
 		border-color: #3FE0CD;
+		cursor: pointer;
 	}
 
 
