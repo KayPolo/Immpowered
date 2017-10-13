@@ -61,7 +61,7 @@
 	}
 
 	.topNav a:hover{
-		color: gold;
+		color: navy;
 	}
 
 	#logo{
@@ -70,6 +70,28 @@
 		left: 40px;
 		height: 30px;
 	}
+
+	#start{
+		z-index: 400;
+		position: absolute;
+		margin-top: 85vh;
+		font-size: 30px;
+		width: 10vw;
+		text-align: center;
+		margin-left: 45vw;
+		color: white;
+		font-style: none;
+		border: solid 3px;
+		border-color: white;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		font-weight: 300;
+	}
+
+	#start:hover{
+		border-color: #3FE0CD;
+	}
+
 
 	span{
 		float: right;
@@ -113,7 +135,7 @@
 	}
 
 	.sideNav a:hover{
-	color: gold;
+	color: navy;
 	}
 
 /* home page */
