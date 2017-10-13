@@ -9,13 +9,63 @@
 
 	.ham-container{
 		position: fixed;
-		z-index: 90;
+		z-index: 300;
+		display: none;
 	}
 	.hamberguer{
-		top: 20px;
+		top: 1px;
 		left: 30px;
 		position: absolute;
 		
+	}
+
+	#myTopNav{
+	height: 60px;
+	width: 100vw;
+	position: fixed;
+	background-color: #3FE0CD;
+	text-align: center;
+	z-index: 1;
+	top: 0;
+	
+	}
+
+	#intro-p{
+		max-width: 25vw;
+		font-size: 1em;
+		text-align: left;
+		position: absolute;
+		margin-left: 37.5vw;
+		z-index: 200;		
+		
+	}
+
+	.topNav a{
+		text-decoration: none;
+		font-size: 1em;
+		color: white;
+		display: inline-block;
+		padding: 20px;
+		font-family: Arial;
+		
+	}
+
+	.topNav a:hover{
+		color: gold;
+	}
+
+	#logo{
+		position: absolute;
+		padding: 15px;
+		left: 40px;
+		height: 30px;
+	}
+
+	span{
+		float: right;
+		margin-right: 30px;
+		margin-top: 10px;
+
 	}
 
 	#mySideNav{
@@ -29,6 +79,7 @@
 	text-align: center;
 	transition: width 1s; 
 	overflow-x: hidden;
+	z-index: 399;
 
 	}
 
@@ -89,13 +140,11 @@
 		color: dimgray;
 		z-index: 2;
 		left: 0;
-		background-color: white;
+
 		/*opacity: 0.5;*/
 		padding-left: 10vw;
 		padding-right: 1vw;
-
-
-
+		z-index: 1;
 
 	}
 
@@ -122,224 +171,19 @@
 
 	}
 
+@media screen and (max-width: 500px), screen and (max-device-width: 500px) and (orientation: landscape), screen and (max-device-height: 500px) and (orientation: landscape){
 
-/* team page */
-	.grid-one{
-		width: 100%;
-		height: auto;
-		margin-left: 0vw;
-		z-index: 1;
-		background-color: white;
-		position: relative;
-		text-align: center;
-	}
-
-	.grid-one img{
-		width: 90vw;
-		height: auto;
-	}
-	.grid-one-container{
-		margin-bottom: 100px;
-	}
-/* #inspiration page */
-	.#inspiration{
-		width: 100%;
-		height: calc(23vw*3);
-		margin-left: 0vw;
-		z-index: 1;
-		background-color: white;
-		position: relative;
-		text-align: center;
-	}
-	.grid-container{
-		width: 81vw;
-		height: auto;
-		margin-left: 9.5vw;
-		margin-top: 60px;
-		
-	}
-
-	.img-grid{
-		background-color: gold;
-		width: calc(78vw/3);
-		height: 18.8vw;
-		margin: 0.5vw;
-		float: left;
-	}
-	.grid-container img{
-		width: calc(78vw/3);
-		height: auto;
-		z-index: 1;
-	}
-	.name-grid {
-		width: calc(78vw/3);
-		height: 18.8vw;
-		z-index: 10;
-		position: absolute;
-		text-align: left;
-		opacity: 0;
-	}
-
-	.name-grid:hover{
-		opacity: 1;
-		cursor: pointer;
-	}	
-
-	.name-grid span{
-		position: absolute;
-		font-size: 24px;
-		margin-left: 1vw;
-		color: white;
-		z-index: 20;
-		margin-top: 2vw;
-	}
-
-	.back-grid{
-		width: calc(78vw/3);
-		height: 18.8vw;
-		background-color: black;
-		opacity: 0.5;
-		z-index: 11;
-	}
-
-/* aesthetic page */
-	.aesthetic{
-		width: 100%;
-		height: 110vw;
-		margin-left: 0vw;
-		z-index: 1;
-		background-color: white;
-		position: relative;
-		text-align: center;
-	}
-
-	.aesthetic img{
-		width: 80vw;
-		height: auto;
-		margin-left: 1vw;
-		padding-top: 50px;
-	}
-
-/* refined page */
-	.refined{
-		width: 100%;
-		height: 110vw;
-		margin-left: 0vw;
-		z-index: 1;
-		background-color: white;
-		position: relative;
-		text-align: center;
-	}
-
-	.refined img{
-		width: 80vw;
-		height: auto;
-		margin-left: 1vw;
-		padding-top: 50px;
-	}
-
-
-/* contact page */
-	.contact{
-		width: 100%;
-		height: 700px;
-		margin-left: 0vw;
-		z-index: 1;
-		background-color: salmon;
-		position: relative;
-		text-align: center;
-	}
-
-
-
-/* menu page */
-	.menubar{
-		background-color: #f8f7fb;
-		width: 100vw;
-		height: 50px;
-		margin-left: 0;
-		margin-top: -50px;
-		opacity: 0.7;
-		z-index: 10;
-		
-	}
-
-	.fixed{
-		position: fixed;
-		top: 50px;
-		width: 100%;
-		opacity: 0.9;
-
-	}
-	.menubar nav{
-		align-content: center;
-		text-decoration: none;
-		text-align: center;
-		list-style-type: none;
-		padding-top: 11px;
-		width: 70vw;
-		height: 50px;
-		margin-left: 15vw;
-		margin-top: -50px;
-		z-index: 20; 
-
-	}
-
-	.menubar nav li{
-		position: relative;
+	.ham-container{
 		display: inline-block;
-		padding-left: 1vw;
-		padding-right: 1vw;
-
+		left: 0;
 	}
+		.topNav a{
+		display: none;
 
-
-	.submenu{
-		text-decoration: none;
-		color: #604B9F;
-		background-color: none;
-		font-size: 20px;
-		font-family: 'Work Sans', sans-serif;
-		padding: 13px;
-
-	}
-
-	.submenu:hover{
-		background-color: #604B9F;
-		color: white;
-		text-decoration: none;
-	}
-
-	footer{
-		opacity: 0.9;
-		width: 100vw;
-		height: 15vh;
-		bottom: 0;
-		position: relative;
-		z-index: 30;
-		transition: 0.5s;
-		background-color: #604B9F;
 		
 	}
 
-
-	.purple{
-		background-color: #604B9F;
-		color: white;
-		text-decoration: none;
+	#logo{
+		display: none;
 	}
-
-
-	.t1, .t2, .t3, .t4, .t5 {
-		opacity: 0;
-		transition: opacity 0.5s;
-	}
-	.appear{
-		opacity: 1;
-	}
-
-	.display{
-		display: all;
-		opacity: 1;
-		transition: 0.5s;
-	}
+}
