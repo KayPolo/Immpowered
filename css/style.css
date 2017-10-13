@@ -19,6 +19,15 @@
 		
 	}
 	.back-img{
+		min-width: 100vw;
+		overflow-x: none;
+		height: 100vh;
+		object-fit: cover;
+		object-position:0 0%;
+		position: absolute;
+		left: 0;
+	}
+	.back-img2{
 		width: 100vw;
 		max-height: 100vh;
 		object-fit: cover;
