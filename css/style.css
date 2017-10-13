@@ -18,7 +18,7 @@
 		position: absolute;
 		
 	}
-	#back-img{
+	.back-img{
 		width: 100vw;
 		max-height: 100vh;
 		object-fit: cover;
@@ -169,6 +169,25 @@
 		padding-right: 1vw;
 		z-index: 1;
 
+	}
+
+	#icons{
+		position: absolute;
+		z-index: 500;
+		display: inline-block;
+		right: 50px;
+	}
+
+	#icons img{
+		width: 2.5vw;
+		padding: 10px;
+		border: solid 0px;
+		color: white;
+	}
+
+	#icons img:hover{
+		border: solid 3px;
+		padding: 7px;
 	}
 
 	.titles{
