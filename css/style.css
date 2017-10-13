@@ -23,6 +23,8 @@
 		max-height: 100vh;
 		object-fit: cover;
 		object-position:0 0%;
+		position: absolute;
+		left: 0;
 	}
 
 
